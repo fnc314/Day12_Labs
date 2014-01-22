@@ -1,0 +1,9 @@
+<div>
+  Name:  <%= @creature.name %> <br>
+  Description: <%= @creature.description %> <br>
+  ID Number: <%= @creature.id %>
+</div>
+
+<a href="/">HOME</a>
+<a href="/creatures/<%=@creature.id%>/edit">UPDATE</a>
+<a href="/creatures/<%=@creature.id%>/destroy">DELETE</a>

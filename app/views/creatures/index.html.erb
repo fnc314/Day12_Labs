@@ -1,0 +1,9 @@
+<% @creature.each do |x| %>
+  <div>
+    Name:  <a href="/creatures/<%= x[:id].to_i %>"><%= x[:name] %></a> <br>
+    Description: <%= x[:description] %>
+  </div>
+  <br>
+<% end %> <br><br>
+
+<a href="/creatures/new">Add a new creature!</a>
